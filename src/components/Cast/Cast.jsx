@@ -1,7 +1,7 @@
 import css from './Cast.module.css';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getMovieDetailsCast } from '../App';
+import { getMovieDetailsCast } from '../../functions/functions';
  
 
 

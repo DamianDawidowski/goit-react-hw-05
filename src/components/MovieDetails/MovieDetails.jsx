@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
-import { getMovieDetails } from '../App';
+import { getMovieDetails } from '../../functions/functions';
 import css from './MovieDetails.module.css';
  
  

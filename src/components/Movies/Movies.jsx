@@ -2,7 +2,7 @@ import SearchBox from "../SearchBox/SearchBox"
 import css from './Movies.module.css';
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom"
-import { getSearchMovies } from '../App';
+import { getSearchMovies } from '../../functions/functions';
 import { Link } from "react-router-dom";
 
 

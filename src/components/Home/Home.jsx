@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
-import { getTrendingMovies } from '../App';
+import { getTrendingMovies } from '../../functions/functions';
 import css from './Home.module.css';
   
 const Home = () => {

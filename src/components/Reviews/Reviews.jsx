@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getMovieDetailsReviews } from '../App';
+import { getMovieDetailsReviews } from '../../functions/functions';
  
 import css from './Reviews.module.css';
 
