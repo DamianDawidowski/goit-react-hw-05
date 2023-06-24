@@ -1,0 +1,30 @@
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #2a363b;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 500;
+    color: #2a363b;
+    font-size: 18px;
+}
+
+.link :focus,
+.link:hover {
+    color: #2196f3;
+}
