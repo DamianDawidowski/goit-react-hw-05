@@ -4,7 +4,7 @@ import css from './Navigation.module.css';
 
 
 let activeClassName = {
-  color: '#2196f3',
+  color: '#1383df',
 };
 
 const Navigation = () => (

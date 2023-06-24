@@ -18,7 +18,7 @@ function MovieDetails() {
   const navigate = useNavigate();
 
   let activeClassName = {
-    color: '#2196f3',
+    color: '#1383df',
   };
 
   const handleClick = () => navigate(location?.state?.from ?? '/');
@@ -30,7 +30,7 @@ function MovieDetails() {
         setMovie(res);
       })
       .catch(error => {
-        setError('Ooops. Something went wrong...');
+        setError('An error occured...');
       })
       .finally(() => setLoading(false));
   }, [movieId]);
@@ -51,11 +51,11 @@ function MovieDetails() {
               src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
               alt={movie.title}
             />
-            <h3>{movie.title}</h3>
+            <h4>{movie.title}</h4>
             <p>({getYear()})</p>
             <p>User Score: {movie.popularity}</p>
             <div className="movie_overview">
-              <h3>Overview</h3>
+              <h4>Overview</h4>
               <p>{movie.overview}</p>
             </div>
           </div>

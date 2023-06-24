@@ -59,9 +59,7 @@ function App() {
             <Route path="/movies/:movieId/cast" element={<Cast />} />
           </Route>
           <Route path="*" element={<Home />} />
-        </Routes>
-
- 
+        </Routes> 
       </Suspense>
       </>
   );

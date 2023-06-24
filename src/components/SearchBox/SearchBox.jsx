@@ -12,7 +12,7 @@ const SearchBox = ({ onChange }) => {
   const handleSubmit = evt => {
     evt.preventDefault();
     if (searchQuery.trim() === '') {
-      alert('Enter the film title');
+      alert('Please provide the movie title');
     }
 
     onChange(searchQuery);

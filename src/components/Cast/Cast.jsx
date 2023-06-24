@@ -20,7 +20,6 @@ const Cast = () => {
         const res = await getMovieDetailsCast(movieId);
         setCast(res);
       } catch (error) {
-        console.error('Something wrong with fetch cast on movie page', error);
         setError(error.message);
       }
       finally {
@@ -39,7 +38,8 @@ const Cast = () => {
             let profileImg = `https://image.tmdb.org/t/p/w500${profile_path}`;
 
             if (!profile_path) {
-              profileImg = 'https://img.freepik.com/free-vector/coming-soon-display-background-with-focus-light_1017-33741.jpg';
+            profileImg = 'https://img.freepik.com/free-vector/coming-soon-black-backgroun-design_1017-37033.jpg?w=740&t=st=1687590032~exp=1687590632~hmac=f4299307fcc1f5dd11708d084dac40313c51828f25b3967ba47a65431cdcf25e';
+            
             };
             return (
               <li key={id} className={css.castItem}>
@@ -57,13 +57,13 @@ const Cast = () => {
           })}
         </ul>
       ) : (
-        <p>There is no information about actors for this movie.</p>
+        <p>There is no information about actors.</p>
       )}
 
       {error && (
          
           <h2 className={css.message}>
-            The service is temporarily unavailable. Please try again later.
+            The service is temporarily unavailable, please try again.
           </h2>
         
       )}

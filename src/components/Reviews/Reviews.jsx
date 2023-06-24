@@ -17,7 +17,7 @@ const Reviews = () => {
         const fetchedReviews = await getMovieDetailsReviews(movieId);
         setReviews(fetchedReviews.results); 
       } catch (error) {
-      console.error('Something wrong with fetching reviews on movie page', error);
+      console.error('Something went wrong with fetching reviews on movie page', error);
       setError(error.message);
     }
     };
@@ -39,15 +39,14 @@ const Reviews = () => {
         })}
       </ul>
       ) : (
-        <p>We don't have any reviews for this movie</p>
+        <p>There are no reviews for this movie</p>
       )}
 
-      {error && (
-     //   <Message>
+      {error && ( 
           <h2>
-            The service is temporarily unavailable. Please try again later.
+            The service is currently unavailable. Please try again later.
           </h2>
-     //   </Message>
+    
       )}
     </div>
   );  
